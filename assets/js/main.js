@@ -1,4 +1,4 @@
-import fireflies from '../../../portafolio_nico/assets/js/components/firefly.js';
+import fireflies from './components/firefly.js';
 import parallax from './components/parallax.js';
 import activeMenu from './components/selected_menu.js';
 import updateDateYear from './helpers/date_updater.js';
