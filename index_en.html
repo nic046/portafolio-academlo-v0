@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicolás Morón Vallejo">
+    <meta name="description" content="No more than 165 characters">
+    <meta name="keywords" content="Portfolio, Development, front-end, Javascript, Css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="assets/js/main.js" defer></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "waYalZzn7Jxgl67yH",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <span>{</span><span>}</span>
+    </div>
+    <header class="header">
+      <nav class="navbar grid--container flex--container">
+        <a class="navbar__logo flex--container" href="#"><img class="logo" src="assets/img/Logo.png" alt="Page logo"></i>Nico.me</a>
+        <div id="nav" class="navbar__menu">
+          <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+          <ul class="navbar__list flex--container">
+            <li class="navbar__item">
+              <a class="navbar__link active" href="#home">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#about">About Me</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#skills">Skills</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#projects">Portfolio</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__toggles flex--container">
+          <div class="navbar__toggle--darkmode flex--container">
+            <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+            <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+              <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+              <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+            </label>
+          </div>
+          <div class="navbar__toggle--language flex--container">
+            <input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
+            <label for="language-toggle" class="navbar__toggle--language-label"></label>
+          </div>
+        </div>
+        <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="home">
+        <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+        <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+        <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+        <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+        <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+        <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+        <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+        <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+        <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+        <i class="bx bxl-python home__layer home__layer--10" data-speed="-7"></i>
+        <i class="bx bx-code-alt home__layer home__layer--11" data-speed="-5"></i>
+        <div class="home__container grid--container">
+          <div class="home__image">
+            <img src="assets/img/profile.png" alt="profile photo" title="Nicolás Morón Vallejo" />
+          </div>
+
+          <ul class="home__social flex--container">
+          <li class="home__social-item">
+            <a class="home__social-link linkedin" href="https://www.linkedin.com/in/nicol%C3%A1s-mor%C3%B3n-vallejo/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link whatsapp" href="https://wa.me/+59160748307?text=Quisiera%20solicitar%20un%20desarrollo%20web!!!!" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link github" href="https://github.com/nic046" target="_blank"><i class="bx bxl-github"></i></a>
+          </li>
+          <li class="home__social-item">
+            <a class="home__social-link mail" href="mailto:nmoron386@gmail.com" target="_blank"><i class="bx bx-envelope"></i></a>
+          </li>
+        </ul>
+          <div class="home__info">
+            <h1 class="home__title">Hi, I'm Nico</h1>
+            <p class="home__description">
+              Developer passionate about creating innovative solutions in web development and digital systems optimization.
+            </p>
+          </div>
+          <div class="home__buttons">
+            <a class="btn btn--primary" href="#" title="Download my CV" download="my_cv" rel="noreferrer nofollow">
+              Download CV
+            </a>
+          </div>
+        </div>
+      </section>
+    <section id="about" class="about section">
+      <h2 class="section__title">About me</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          I am a developer committed to creating efficient and innovative solutions.
+          I have experience in programming, web design, and application development,
+          always focused on delivering optimized and functional products. I am
+          passionate about learning new technologies and facing challenges that drive
+          my professional growth, continually seeking to improve my skills and add
+          value to every project.
+        </p>
+
+        <div class="about__cards flex--container">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_1.webp" alt="Laborando como ingeniero"
+              title="Laborando como ingeniero" />
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_2.jpg" alt="Laborando como diseñador"
+              title="Laborando como diseñador" />
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/me_3.jpg" alt="Trabajando en equipo"
+              title="rabajando en equipo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description flex--container">
+          Experienced in HTML, CSS, JavaScript, Python, and MySQL, 
+          I craft dynamic web applications with a keen eye for detail and efficiency. 
+          I'm proficient in frameworks like Flask, focusing on creating responsive and user-friendly designs. 
+          My soft skills include strong teamwork, creativity, punctuality, and proactive problem-solving, 
+          making me a well-rounded and dedicated developer.
+        </p>
+
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">
+
+            <!--Card 1 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-html5 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">HTML</h3>
+
+                <p class="skills__card-description">
+                  I excel in HTML to structure web content in a semantic and accessible way.
+                  I effectively use tags and attributes, ensuring that pages are compatible with various devices and browsers.
+                  I focus on validation and best practices to ensure code quality.    
+                </p>
+              </div>
+            </details>
+
+            <!--Card 2 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-css3 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">CSS3</h3>
+
+                <p class="skills__card-description">
+                  I have advanced skills in CSS, applying styles to web pages to achieve attractive and responsive designs.
+                I use preprocessors like SASS and design tools to implement flexible and adaptive layouts, enhancing the visual presentation of 
+                </p>
+              </div>
+            </details>
+
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-javascript flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript</h3>
+
+                <p class="skills__card-description">
+                  My competencies with JavaScript include using its features to create interactive web applications.
+                  I have experience in DOM manipulation, event handling, and developing asynchronous functions.
+                  My focus is on optimizing performance and user experience.
+                </p>
+              </div>
+            </details>
+
+            <!--Card 4 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class='bx bxs-data'></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">MySql</h3>
+
+                <p class="skills__card-description">
+                  I am proficient in MySQL, managing databases and optimizing queries for efficient performance.
+                  I design database schemas that ensure integrity and efficiency, and use SQL to extract and manipulate data as needed for projects.
+                </p>
+              </div>
+            </details>
+
+            <!--Card 5 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-python flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Python</h3>
+
+                <p class="skills__card-description">
+                  I have experience in Python, developing efficient applications and scripts.
+                  I use libraries like Pandas and NumPy for data analysis, and frameworks like Flask to create web applications.
+                  My focus is on code readability and maintainability.
+                </p>
+              </div>
+            </details>
+
+            <!--Card 6 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-flask flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Flask</h3>
+
+                <p class="skills__card-description">
+                  I have experience developing web applications using Flask.
+                  I leverage its flexibility to implement routes, handle requests and responses, and work with Jinja2 templates to generate dynamic content.
+                  I also integrate databases and manage user authentication, ensuring that applications are functional and secure.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="skills__tags flex--container">
+          <h3 class="skills__tags-title">Soft Skills</h3>
+          <div class="skills__tags-container flex--container">
+            <span class="skills__tag">Responsible</span>
+            <span class="skills__tag">Teamwork</span>
+            <span class="skills__tag">Creative</span>
+            <span class="skills__tag">Punctual</span>
+            <span class="skills__tag">Proactive</span>
+            <span class="skills__tag">Self-taught</span>
+            <span class="skills__tag">Conflict resolver</span>
+            <span class="skills__tag">Empathetic</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Projects</h2>
+
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project1.jpeg" alt="project 1" title="login Validator" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">login Validator</h3>
+              <p class="projects__description">
+                When developing the login validator using Python and Flask, user authentication is managed.
+                The application features HTML forms and CSS styles, providing an attractive interface.
+                It validates entered credentials, offering instant feedback on access,
+                ensuring a secure and smooth user experience.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project2.png" alt="project 2" title="CRUD users" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">User Management with CRUD</h3>
+              <p class="projects__description">
+                Implementation of a CRUD application using Flask and MySQL to manage data efficiently.
+                The interface is built with HTML and CSS, offering an intuitive user experience.
+                This application allows you to create, read, update, and delete records,
+                ensuring the integrity and security of information at all times.
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project3.jpg" alt="project 3" title="Blog administrator" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Blog administrator</h3>
+              <p class="projects__description">
+                I developed a news blog using Flask and MySQL, with an intuitive interface designed in HTML and CSS.
+                The application allows users to publish, edit, and delete articles, as well as comment on posts.
+                I implemented user authentication features, ensuring a secure and personalized experience.        
+              </p>
+
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <img src="assets/img/project4.png" alt="project 4" title="Automation with python" />
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Data Analytics</h3>
+              <p class="projects__description">
+                I carried out a solar energy data analysis project using Python.
+                I applied analysis and visualization techniques to evaluate the performance of photovoltaic systems,
+                identifying patterns in energy production and optimizing decision-making.
+                This approach allowed me to offer data-driven recommendations for improving energy  
+            </p>
+              <div class="projects__buttons">
+                <button class="btn projects__button" type="button">
+                  VER DEMO
+                </button>
+                <button class="btn projects__button" type="button">
+                  VER CÓDIGO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Contacts</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Contact Information</h3>
+          <p class="contact__info-description">
+            Como desarrollador de software estoy a su disposición para resolver cualquier consulta que tenga.
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a href="https://wa.me/+59160748307?text=Quisiera%20solicitar%20un%20desarrollo%20web!!!! " target="_blank"
+                  rel="noreferrer nofollow">Send me a WhatsApp message</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a href="tel:+591 77418321" target="_blank" rel="noreferrer nofollow">
+                  +591 77418321
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a id="mail" href="mailto:nmoron386@gmail.com" target="_blank" rel="noreferrer nofollow">
+                  nmoron386@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map"> Cochabamba, Bolivia. </span>
+            </div>
+          </address>
+        </div>
+
+        <div class="contact__form">
+          <h3 class="contact__form-title">Send me a message</h3>
+
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Email</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Message</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Form successfully sent!
+              <button type="reset" id="btn_close-modal">Message</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">Nicolás Morón Vallejo</h3>
+        <p class="footer__description">
+          As a software developer, I am at your disposal to resolve any queries you may have.
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Social media</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/nicolas.moron.94/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-facebook"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/nicolasmoronvallejo/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-instagram"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-twitter"></i></a>
+          </li>
+
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/nicol%C3%A1s-mor%C3%B3n-vallejo/" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy"></p>
+  </footer>
+
+  <div id="fireflies"></div>
+
+</body>
+
+</html>
