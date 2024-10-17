@@ -221,7 +221,7 @@ html {
 				margin: auto; 
 			}
 		}
-		@media (max-width: 768px) {
+		@media (max-width: 500px) {
 			.navbar__logo img {
 			  width: 20%;
 			  height: auto; 
