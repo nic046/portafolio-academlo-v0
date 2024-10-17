@@ -217,15 +217,12 @@ html {
 			color: var(--primary-color);
 			.img {
 				max-width: 80%;
-				height: auto;
-				margin: auto; 
+				max-height: 60%;
 			}
 		}
 		@media (max-width: 500px) {
 			.navbar__logo img {
 			  width: 20%;
-			  height: auto; 
-			  margin: auto; 
 			}
 		  }
 		.navbar__menu {
