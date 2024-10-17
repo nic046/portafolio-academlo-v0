@@ -222,7 +222,7 @@ html {
 		}
 		@media (max-width: 500px) {
 			.navbar__logo img {
-			  width: 20%;
+			  height: 20%;
 			}
 		  }
 		.navbar__menu {
