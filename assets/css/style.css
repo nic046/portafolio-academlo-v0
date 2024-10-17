@@ -212,6 +212,7 @@ html {
 
 		.navbar__logo {
 			column-gap: 0.25rem;
+			height: 100%;
 			font-weight: var(--font-semi-bold);
 			color: var(--primary-color);
 		}

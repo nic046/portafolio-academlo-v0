@@ -1,9 +1,9 @@
 function updateDateYear() {
 	const currentYear = new Date().getFullYear();
 
-	const copyrightElement = document.querySelector('.footer__copy');
-
-	copyrightElement.textContent = `© ${currentYear}, Todos los derechos reservados`;
+	const copyrightElement = document.querySelector('.current-year');
+	console.log(copyrightElement)
+	copyrightElement.textContent = `${currentYear}`;
 }
 
 export default updateDateYear;

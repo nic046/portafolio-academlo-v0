@@ -21,7 +21,7 @@ function fireflies(updateHue) {
         firefly.style.boxShadow = `0 0 20px hsl(${hue}, 100%, 50%)`;
       });
   
-      updateHue(hue);
+      /*updateHue(hue);*/
     });
   }
 
