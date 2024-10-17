@@ -215,14 +215,17 @@ html {
 			height: 100%;
 			font-weight: var(--font-semi-bold);
 			color: var(--primary-color);
-			.img {
-				max-width: 60%;
-				max-height: 50%;
-			}
-		}
-		@media (max-width: 500px) {
+		  }
+		  
+		  .navbar__logo img {
+			max-width: 60%;
+			max-height: 50%;
+		  }
+		  
+		  @media (max-width: 500px) {
 			.navbar__logo img {
-			  height: 20%;
+			  width: 20%;
+			  height: auto;
 			}
 		  }
 		.navbar__menu {
