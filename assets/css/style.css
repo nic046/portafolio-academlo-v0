@@ -222,10 +222,10 @@ html {
 			max-height: 60%;
 		  }
 		  
-		  @media (max-width: 500px) {
+		  @media (max-width: 750px) {
 			.navbar__logo img {
-			  width: 40%;
-			  height: 40%;
+			  width: 30%;
+			  height: 30%;
 			}
 		  }
 		.navbar__menu {
