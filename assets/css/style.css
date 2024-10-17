@@ -91,7 +91,7 @@ html {
 
 /* ============= REUSABLE CLASSES ============= */
 .section {
-	padding: 4rem 0;
+	padding: 3rem 0;
 	.section__title {
 		text-align: center;
 		margin: var(--mr-3) 0;
