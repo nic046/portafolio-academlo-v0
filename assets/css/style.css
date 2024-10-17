@@ -218,14 +218,14 @@ html {
 		  }
 		  
 		  .navbar__logo img {
-			max-width: 60%;
-			max-height: 40%;
+			max-width: 50%;
+			max-height: 60%;
 		  }
 		  
 		  @media (max-width: 500px) {
 			.navbar__logo img {
-			  width: 20%;
-			  height: 30%;
+			  width: 40%;
+			  height: 40%;
 			}
 		  }
 		.navbar__menu {
