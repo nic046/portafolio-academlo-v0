@@ -211,7 +211,7 @@ html {
 		justify-content: space-between;
 
 		.navbar__logo {
-			column-gap: 0.25rem;
+			column-gap: 0.25em;
 			height: 100%;
 			font-weight: var(--font-semi-bold);
 			color: var(--primary-color);
