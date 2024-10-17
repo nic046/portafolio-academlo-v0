@@ -24,7 +24,7 @@ Codepen - muchas ideas y desarrollos
 
 	/* Colors */
 	--primary-color: light-dark(#111, #ffffffcc);
-	--bg-color-section1: light-dark(#caf2f8dd, #111);
+	--bg-color-section1: light-dark(#beecf4dd , #111);
 	--bg-color-section2: light-dark(#f9f9f9, #6a6a6a);
 	--bg-color-buttons: light-dark(#e0e0e0, #6a6a6a);
 
@@ -211,7 +211,7 @@ html {
 		justify-content: space-between;
 
 		.navbar__logo {
-			column-gap: 0.25em;
+			column-gap: 0.2em;
 			height: 100%;
 			font-weight: var(--font-semi-bold);
 			color: var(--primary-color);
